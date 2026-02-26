@@ -34,13 +34,13 @@ This command performs:
 
 The scan identified **5 open ports** on the local machine:
 
-| Port      | State | Service        | Description                                      |
+| Port      | State | Service        | Version                                      |
 |-----------|--------|----------------|--------------------------------------------------|
-| **135/tcp** | open  | msrpc          | Microsoft Windows RPC endpoint mapper            |
+| **135/tcp** | open  | msrpc          | Microsoft Windows RPC            |
 | **445/tcp** | open  | microsoft-ds   | SMB file sharing service                         |
-| **902/tcp** | open  | ssl/vmware-auth | VMware authentication service                    |
-| **912/tcp** | open  | ssl/vmware-auth | VMware authentication service                    |
-| **5357/tcp** | open | http           | Windows HTTP service (Web Services for Devices)  |
+| **1042/tcp** | open  | afrog | Service guess                    |
+| **1043/tcp** | open  | ssl/boinc | Service guess                   |
+| **5357/tcp** | open | http           | Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)  |
 
 These results indicate that the system is running standard Windows services, along with VMware‑related services if virtualization tools are installed.
 
