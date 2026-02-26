@@ -15,12 +15,33 @@ The tasks in this repository demonstrate foundational cybersecurity skills acros
 
 ## 📁 Repository Structure
 
-/Task1-Nmap ├── nmap_scan_results.txt ├── screenshots/ └── README.md
-/Task2-UFW ├── ufw_configuration.sh ├── screenshots/ └── README.md
-/Task3-DVWA ├── sql_injection_exploit.sh ├── screenshots/ └── README.md
-/Task7-Nikto ├── nikto_scan_results.txt └── README.md
-/Task8-Wireshark ├── wireshark_capture.pcap └── README.md
-/Reports ├── network_security_threats_report.md ├── social_engineering_report.md └── patch_management_report.md
+/Task1-Nmap
+├── nmap_scan_results.txt
+├── screenshots/
+└── README.md
+
+/Task2-UFW
+├── ufw_configuration.sh
+├── screenshots/
+└── README.md
+
+/Task3-DVWA
+├── sql_injection_exploit.sh
+├── screenshots/
+└── README.md
+
+/Task7-Nikto
+├── nikto_scan_results.txt
+└── README.md
+
+/Task8-Wireshark
+├── wireshark_capture.pcap
+└── README.md
+
+/Reports
+├── network_security_threats_report.md
+├── social_engineering_report.md
+└── patch_management_report.md
 
 ---
 
@@ -51,4 +72,4 @@ This repository is structured to meet those requirements with:
 
 ## 📹 Demo Videos
 
-Demo videos for practical tasks (Nmap, UFW, DVWA, Nikto, Wireshark) will be added as they are completed.
+Demo videos for practical tasks (Nmap, UFW, DVWA, Nikto, Wireshark) will be added to my LinkedIn page & YouTube channel as they are completed.
