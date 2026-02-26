@@ -54,7 +54,8 @@ Task1-Nmap/
 ├── screenshots/               # Zenmap screenshots
 │     ├── Nmap Screenshot 2026-02-25.1.png
 │     ├── Nmap Screenshot 2026-02-25.2.png
-│     └── Nmap Screenshot 2026-02-25.3.png
+│     ├── Nmap Screenshot 2026-02-25.3.png
+|     └── Nmap Screenshot 2026-02-25.4.png
 └── README.md                  # This file
 ```
 
@@ -70,7 +71,7 @@ Screenshots of the Zenmap output are included in the `screenshots/` folder as re
 ## 📘 Interpretation
 
 - **RPC (135)** and **SMB (445)** are common Windows services used for remote procedure calls and file sharing.
-- **VMware ports (902, 912)** appear when VMware Workstation or similar virtualization tools are installed.
+- **VMware ports (1042, 1043)** appear when VMware Workstation or similar virtualization tools are installed.
 - **Port 5357 (HTTP)** is used by Windows for device discovery and web services.
 
 These findings are normal for a Windows host and demonstrate that the scan successfully identified active services.
