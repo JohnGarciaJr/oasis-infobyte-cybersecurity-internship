@@ -63,7 +63,7 @@ Contains screenshots showing:
 
 ---
 
-## 🎥 Demo Video (Optional)
+## 🎥 Demo Video - Posted on LinkedIn
 A short walkthrough demonstrating:
 - Running the script  
 - Verifying UFW rules  
@@ -76,4 +76,4 @@ This task is **complete** and includes:
 - `ufw_configuration.sh`  
 - Screenshot of active UFW rules  
 - README.md  
-- Demo videoon LinkedIn
+- Demo video - Posted on LinkedIn
