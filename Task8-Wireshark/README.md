@@ -5,10 +5,9 @@ This task involves capturing and analyzing network traffic using Wireshark. The 
 
 ## Tools Used
 - Wireshark
-- Npcap (for packet capturing)
 
 ## Steps Performed
-1. Installed Wireshark and Npcap.
+1. Installed Wireshark.
 2. Selected the active network interface and began capturing packets.
 3. Generated HTTP traffic by visiting example websites.
 4. Applied the filter `http` to isolate HTTP packets.
@@ -22,4 +21,4 @@ This task involves capturing and analyzing network traffic using Wireshark. The 
 - Response codes such as `200 OK` confirmed successful communication.
 
 ## Files Included
-- `wireshark_capture.pcap` — Raw packet capture file.
+- `Task8-Capture.pcapng` — Raw packet capture file.
