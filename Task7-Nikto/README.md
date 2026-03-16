@@ -1,123 +1,96 @@
-# Task 3 — SQL Injection (DVWA)
-Oasis Infobyte Cybersecurity Internship
+# 🛡️ Task 7 — Nikto Web Vulnerability Scan  
+**Oasis Infobyte Cybersecurity Internship**
 
-## 📌 Overview
-This task focuses on identifying and exploiting SQL Injection vulnerabilities within the **DVWA (Damn Vulnerable Web Application)** SQLi module.  
-The objective is to understand how insecure input handling can be abused to extract sensitive data and manipulate backend SQL logic.
-
-This README includes:
-- Normal application behavior
-- Boolean-based SQL Injection
-- UNION-based SQL Injection
-- Root cause analysis
-- Mitigation recommendations
-- Evidence files (`.txt` and `.html`)
-- Exploit script
-- Completion summary
+## 📌 Objective
+Perform a comprehensive web vulnerability scan using **Nikto** against the target web server, identify potential security issues, analyze the findings, and document remediation recommendations.
 
 ---
 
-## 🧪 1. Normal Query Behavior
-A standard request using:
+## 🖥️ 1. Environment Setup
+- **Operating System:** Kali Linux  
+- **Tool:** Nikto Web Server Scanner  
+- **Target:** DVWA or internship‑provided web server  
+- **Network:** Localhost or assigned IP  
+
+---
+
+## 🚀 2. Running the Nikto Scan
+
+### Basic Scan Command
+```bash
+nikto -h http://<target-ip>/
 ```
-?id=1
+
+---
+
+### Useful Flags
+
+
+---
+
+### Example Command Used
+```bash
+nikto -h http://127.0.0.1 --output nikto_results.txt
 ```
-returns the expected user record.  
-This confirms the application behaves normally before injection attempts.
 
 ---
 
-## 🔓 2. Boolean-Based SQL Injection
+## 📸 3. Evidence & Screenshots
+Include screenshots showing:
+- The Nikto command execution
+- Scan progress
+- Final results
+- Any exported output files
+Place them inside:
+Task-7-Nikto/screenshots/
 
-### Payload Used
-```sql
-' OR '1'='1
-```
-This modifies the backend SQL query into an always‑true condition, causing DVWA to return all user records.
 
-Result
-- Successfully extracted all users from the database
-- Confirmed that DVWA directly concatenates user input into SQL queries
 
----
+## 🔍 4. Key Findings
+Document the vulnerabilities discovered during the scan.
+Below is a template you can replace with your actual results.
+1. Outdated Apache Version
+- Description: Server is running an outdated version of Apache.
+- Risk Level: High
+- Impact: May contain known vulnerabilities and exploits.
+- Recommendation: Update Apache to the latest stable version.
+2. Directory Listing Enabled
+- Description: Directory browsing is enabled on the server.
+- Risk Level: Medium
+- Impact: Attackers can view sensitive files and directories.
+- Recommendation: Disable directory listing in server configuration.
+3. Missing Security Headers
+- Description: Headers such as X-Frame-Options or X-XSS-Protection are missing.
+- Risk Level: Medium
+- Impact: Increases exposure to clickjacking and XSS attacks.
+- Recommendation: Add recommended security headers.
 
-## 🧪 3. UNION-Based Injection (Successful with `#` Comment Operator)
+## 🛠️ 5. Risk Analysis
+Summarize the overall security posture:
+- Number of high‑risk issues
+- Number of medium‑risk issues
+- Number of low‑risk issues
+- Potential impact if exploited
+- Likelihood of exploitation
 
-### Payloads Tested
-```sql
-1' UNION SELECT user, password FROM users #
-AND
-1' UNION SELECT first_name, last_name FROM users #
-```
-### ✅ Result
-The UNION-based SQL injection executed successfully when using the `#` comment operator.  
-This allowed the injected `UNION SELECT` query to run without interference from the remainder of the original SQL statement, returning usernames and password hashes from the database.
+## 🧩 6. Mitigation Recommendations
+Provide actionable steps to improve security:
+- Patch outdated software and services
+- Disable unnecessary modules
+- Harden HTTP headers
+- Restrict directory access
+- Implement proper authentication and access controls
 
-### 🧠 Why `#` Works
-- MySQL supports `#` as a valid single-line comment operator.  
-- The `--` operator requires a trailing space, which DVWA does not always preserve.  
-- Using `#` cleanly comments out the rest of the backend query, preventing syntax errors.  
-- This ensures the UNION payload executes correctly and returns the expected results.
+📁 7. Folder Structure
+Task-7-Nikto/
+│── README.md
+│── nikto_results.txt (optional)
+│── screenshots/
+│     ├── scan_start.png
+│     ├── scan_results.png
+│     └── findings.png
 
-### 📌 Notes
-- The number of columns in the `UNION SELECT` must match the original query.  
-- DVWA Low Security may still restrict certain UNION behaviors.  
-- Successful execution confirms the backend is vulnerable to UNION-based SQL Injection when the correct comment operator is used.
 
----
 
-## 🛡 4. Root Cause
-The vulnerability exists because DVWA:
-- Directly concatenates user input into SQL queries
-- Does not sanitize or escape input
-- Does not use prepared statements
-- Does not enforce type checking
-These weaknesses allow attackers to manipulate SQL query structure.
-
----
-
-## 📚 5. Mitigation Recommendations
-To prevent SQL Injection:
-- Use prepared statements (parameterized queries)
-- Validate and sanitize all user input
-- Enforce strict data types
-- Limit database privileges
-- Implement safe error handling that does not expose SQL details
-
----
-
-## 📸 6. Evidence Included
-The following files are included in this task folder:
-| File | Description |
-|------|-------------|
-| **sql_injection_output.txt** | Raw text output generated from the automated SQL Injection exploit script. This file captures the server responses for the normal query, boolean-based injection, and UNION-based injection attempts. |
-| **sql_injection_output.html** | Browser-rendered HTML output showing the extracted user data returned by the SQL Injection payloads. This includes usernames and password hashes retrieved from the DVWA database. |
-
-These files serve as verifiable proof of successful exploitation.
-
----
-
-## 🧰 7. Exploit Script
-This task incudes:
-```
-sql_injection_exploit.sh
-```
-This Bash script automates:
-- Normal query
-- Boolean-based DQLi
-- UNION-based SQLi
-- Output extraction
-It demonstrates how SQL Injection can be executed programmatically.
-
----
-
-## ✅ 8. Task Completion Summary
-- Accessed the DVWA SQL Injection module
-- Verified normal behavior
-- Performed SQL Injection using ' OR '1'='1
-- Extracted all user records
-- Successfully executed UNION-based SQLi using #
-- Captured evidence in .txt and .html formats
-- Documented root cause and mitigation strategies
-- Delivered a reusable exploit script
-This completes Task 3 for the Oasis Infobyte Cybersecurity Internship.
+## 🎯 8. Conclusion
+Nikto successfully identified multiple potential vulnerabilities on the target web server. These findings highlight the importance of regular vulnerability scanning and proactive patching to maintain a secure and resilient environment.
