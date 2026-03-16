@@ -21,10 +21,21 @@ Perform a comprehensive web vulnerability scan using **Nikto** against the targe
 nikto -h http://<target-ip>/
 ```
 
----
-
 ### Useful Flags
 
+| Flag | Description |
+|------|-------------|
+| `-h <host>` | Specifies the target host or URL to scan |
+| `-p <port>` | Sets a custom port (e.g., 80, 443) |
+| `-ssl` | Forces SSL mode for HTTPS scanning |
+| `-o <file>` | Outputs results to a specified file |
+| `-Format <type>` | Sets output format (e.g., txt, html, csv, xml) |
+| `-Tuning <options>` | Limits tests to specific categories (e.g., 1,2,3) |
+| `-timeout <seconds>` | Sets a timeout for requests |
+| `-Plugins <plugin>` | Runs only specific plugins |
+| `-list-plugins` | Displays all available plugins |
+| `-useproxy` | Routes scan through a proxy |
+| `-update` | Updates Nikto databases |
 
 ---
 
