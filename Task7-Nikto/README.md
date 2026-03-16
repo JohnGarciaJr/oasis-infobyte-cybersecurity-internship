@@ -46,37 +46,55 @@ nikto -h http://127.0.0.1 --output nikto_results.txt
 
 ---
 
-## 📸 3. Evidence & Screenshots
-Include screenshots showing:
-- The Nikto command execution
-- Scan progress
-- Final results
-- Any exported output files
-Place them inside:
-Task-7-Nikto/screenshots/
+## 🔍 3. Scan Results — Key Findings
 
+The following findings were extracted directly from the Nikto scan output (`nikto_scan.txt`):
 
+### 1. Outdated Apache Version Detected
+- **Evidence:** Server reports `Apache/2.4.41`.
+- **Risk Level:** Medium
+- **Impact:** Older versions may contain known vulnerabilities.
+- **Recommendation:** Update Apache and disable version disclosure.
 
-## 🔍 4. Key Findings
-Document the vulnerabilities discovered during the scan.
-Below is a template you can replace with your actual results.
-1. Outdated Apache Version
-- Description: Server is running an outdated version of Apache.
-- Risk Level: High
-- Impact: May contain known vulnerabilities and exploits.
-- Recommendation: Update Apache to the latest stable version.
-2. Directory Listing Enabled
-- Description: Directory browsing is enabled on the server.
-- Risk Level: Medium
-- Impact: Attackers can view sensitive files and directories.
-- Recommendation: Disable directory listing in server configuration.
-3. Missing Security Headers
-- Description: Headers such as X-Frame-Options or X-XSS-Protection are missing.
-- Risk Level: Medium
-- Impact: Increases exposure to clickjacking and XSS attacks.
-- Recommendation: Add recommended security headers.
+### 2. Server Leaks Internal IP Address
+- **Evidence:** Response headers reveal `127.0.1.1`.
+- **Risk Level:** Low
+- **Impact:** Internal IP disclosure can assist attackers in mapping the environment.
+- **Recommendation:** Sanitize server headers.
 
-## 🛠️ 5. Risk Analysis
+### 3. Allowed HTTP Methods May Be Excessive
+- **Evidence:** Nikto reports multiple allowed HTTP methods.
+- **Risk Level:** Medium
+- **Impact:** Methods like TRACE or PUT can be abused if enabled.
+- **Recommendation:** Restrict allowed methods to GET and POST.
+
+### 4. Missing Security Headers
+- **Evidence:** Headers such as `X-Frame-Options`, `X-XSS-Protection`, and `Content-Security-Policy` are not present.
+- **Risk Level:** Medium
+- **Impact:** Increases exposure to clickjacking and XSS.
+- **Recommendation:** Add recommended security headers.
+
+### 5. Cookie Missing Security Flags
+- **Evidence:** DVWA session cookie lacks `httponly` and `secure` attributes.
+- **Risk Level:** Medium
+- **Impact:** Cookies may be exposed to scripts or transmitted insecurely.
+- **Recommendation:** Add `httponly`, `secure`, and `samesite` flags.
+
+### 6. Outdated SSL/TLS Modules
+- **Evidence:** `mod_ssl/2.4.41` and `OpenSSL/1.1.1f` detected.
+- **Risk Level:** Medium
+- **Impact:** Older cryptographic libraries may contain weaknesses.
+- **Recommendation:** Update OpenSSL and enforce strong TLS configuration.
+
+### 7. Directory Indexing May Be Enabled
+- **Evidence:** Nikto indicates potential directory listing behavior.
+- **Risk Level:** Low–Medium
+- **Impact:** Attackers may view sensitive files.
+- **Recommendation:** Disable directory indexing.
+
+---
+
+## 🔍 4. Risk Analysis
 Summarize the overall security posture:
 - Number of high‑risk issues
 - Number of medium‑risk issues
@@ -84,7 +102,9 @@ Summarize the overall security posture:
 - Potential impact if exploited
 - Likelihood of exploitation
 
-## 🧩 6. Mitigation Recommendations
+---
+
+## 🧩 5. Mitigation Recommendations
 Provide actionable steps to improve security:
 - Patch outdated software and services
 - Disable unnecessary modules
@@ -92,7 +112,9 @@ Provide actionable steps to improve security:
 - Restrict directory access
 - Implement proper authentication and access controls
 
-📁 7. Folder Structure
+---
+
+📁 6. Folder Structure
 Task-7-Nikto/
 │── README.md
 │── nikto_results.txt (optional)
@@ -101,7 +123,7 @@ Task-7-Nikto/
 │     ├── scan_results.png
 │     └── findings.png
 
+---
 
-
-## 🎯 8. Conclusion
+## 🎯 7. Conclusion
 Nikto successfully identified multiple potential vulnerabilities on the target web server. These findings highlight the importance of regular vulnerability scanning and proactive patching to maintain a secure and resilient environment.
