@@ -102,7 +102,7 @@ Summarize the overall security posture:
 - Potential impact if exploited
 - Likelihood of exploitation
 
-## 📊 Risk Summary Table (Color‑Coded)
+### 📊 Risk Summary Table (Color‑Coded)
 
 | # | Finding                           | Evidence Example                | Severity | Impact Summary                                      |
 |---|-----------------------------------|----------------------------------|----------|------------------------------------------------------|
@@ -127,7 +127,7 @@ Provide actionable steps to improve security:
 
 ---
 
-📁 6. Folder Structure
+## 📁 6. Folder Structure
 Task-7-Nikto/
 │── README.md
 │── nikto_report.html
