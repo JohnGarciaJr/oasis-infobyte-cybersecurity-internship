@@ -102,6 +102,19 @@ Summarize the overall security posture:
 - Potential impact if exploited
 - Likelihood of exploitation
 
+## 📊 Risk Summary Table (Color‑Coded)
+
+| # | Finding                           | Evidence Example                | Severity | Impact Summary                                      |
+|---|-----------------------------------|----------------------------------|----------|------------------------------------------------------|
+| 1 | Outdated Apache Version           | Apache/2.4.41                    | 🟡 Medium | Older versions may contain known vulnerabilities.    |
+| 2 | Internal IP Address Disclosure    | Header reveals 127.0.1.1         | 🟢 Low    | Helps attackers map internal network structure.      |
+| 3 | Excessive Allowed HTTP Methods    | Multiple methods enabled         | 🟡 Medium | Dangerous methods (TRACE/PUT) may be abused.         |
+| 4 | Missing Security Headers          | No X-Frame-Options, CSP, etc.    | 🟡 Medium | Increases exposure to XSS and clickjacking attacks.  |
+| 5 | Cookie Missing Security Flags     | No httponly / secure attributes  | 🟡 Medium | Cookies may be exposed or intercepted.               |
+| 6 | Outdated SSL/TLS Modules          | OpenSSL/1.1.1f, mod_ssl/2.4.41   | 🟡 Medium | Weak crypto libraries increase attack surface.       |
+| 7 | Directory Indexing Enabled        | Directory listing behavior found | 🟢 Low–Medium | Attackers may view sensitive files.              |
+
+
 ---
 
 ## 🧩 5. Mitigation Recommendations
@@ -117,11 +130,8 @@ Provide actionable steps to improve security:
 📁 6. Folder Structure
 Task-7-Nikto/
 │── README.md
-│── nikto_results.txt (optional)
-│── screenshots/
-│     ├── scan_start.png
-│     ├── scan_results.png
-│     └── findings.png
+│── nikto_report.html
+│── nikto_scan.txt
 
 ---
 
