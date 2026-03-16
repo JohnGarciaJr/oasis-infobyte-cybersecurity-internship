@@ -128,10 +128,13 @@ Provide actionable steps to improve security:
 ---
 
 ## 📁 6. Folder Structure
+
+```
 Task-7-Nikto/
 │── README.md
 │── nikto_report.html
 │── nikto_scan.txt
+```
 
 ---
 
