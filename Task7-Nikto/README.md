@@ -7,10 +7,10 @@ Perform a comprehensive web vulnerability scan using **Nikto** against the targe
 ---
 
 ## 🖥️ 1. Environment Setup
-- **Operating System:** Kali Linux  
+- **Operating System:** Ubuntu 22.04 LTS (VirtualBox VM)  
 - **Tool:** Nikto Web Server Scanner  
-- **Target:** DVWA or internship‑provided web server  
-- **Network:** Localhost or assigned IP  
+- **Target:** DVWA running on localhost (127.0.0.1)  
+- **Network:** Localhost  
 
 ---
 
